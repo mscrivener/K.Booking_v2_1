@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="K.Booking">
+</Property><Property Name="Solution File" Value="C:\Users\Xenia\Documents\Visual Studio 2010\Projects\K.Booking_v2_1\K.Booking\K.Booking.sln">
+</Property><Property Name="Date" Value="05 December 2011">
+</Property><Property Name="Time" Value="20:36:47">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="K.Booking.Elements" Source="..\K.Booking.Elements\K.Booking.Elements.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="K.Booking.Elements" Source="..\K.Booking.Elements\K.Booking.Elements.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="K.Booking.Elements" Source="..\K.Booking.Elements\K.Booking.Elements.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

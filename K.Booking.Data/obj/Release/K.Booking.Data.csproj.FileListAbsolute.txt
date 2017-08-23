@@ -1,0 +1,15 @@
+C:\Users\Xenia\Documents\Visual Studio 2010\Projects\K.Booking\K.Booking.Data\bin\Release\K.Booking.Data.dll
+C:\Users\Xenia\Documents\Visual Studio 2010\Projects\K.Booking\K.Booking.Data\bin\Release\K.Booking.Data.pdb
+C:\Users\Xenia\Documents\Visual Studio 2010\Projects\K.Booking\K.Booking.Data\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Xenia\Documents\Visual Studio 2010\Projects\K.Booking\K.Booking.Data\obj\Release\K.Booking.Data.dll
+C:\Users\Xenia\Documents\Visual Studio 2010\Projects\K.Booking\K.Booking.Data\obj\Release\K.Booking.Data.pdb
+C:\Users\Xenia\Documents\Visual Studio 2010\Projects\K.Booking_v2_1\K.Booking.Data\bin\Release\K.Booking.Data.dll
+C:\Users\Xenia\Documents\Visual Studio 2010\Projects\K.Booking_v2_1\K.Booking.Data\bin\Release\K.Booking.Data.pdb
+C:\Users\Xenia\Documents\Visual Studio 2010\Projects\K.Booking_v2_1\K.Booking.Data\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Xenia\Documents\Visual Studio 2010\Projects\K.Booking_v2_1\K.Booking.Data\obj\Release\K.Booking.Data.dll
+C:\Users\Xenia\Documents\Visual Studio 2010\Projects\K.Booking_v2_1\K.Booking.Data\obj\Release\K.Booking.Data.pdb
+F:\My Data\My Documents\Visual Studio 2010\Projects\K.Booking_v2_1\K.Booking.Data\bin\Release\K.Booking.Data.dll
+F:\My Data\My Documents\Visual Studio 2010\Projects\K.Booking_v2_1\K.Booking.Data\bin\Release\K.Booking.Data.pdb
+F:\My Data\My Documents\Visual Studio 2010\Projects\K.Booking_v2_1\K.Booking.Data\obj\Release\K.Booking.Data.dll
+F:\My Data\My Documents\Visual Studio 2010\Projects\K.Booking_v2_1\K.Booking.Data\obj\Release\K.Booking.Data.pdb
+F:\My Data\My Documents\Visual Studio 2010\Projects\K.Booking_v2_1\K.Booking.Data\obj\Release\K.Booking.Data.csprojResolveAssemblyReference.cache

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="K.Booking">
+</Property><Property Name="Solution File" Value="C:\Users\Xenia\Documents\Visual Studio 2010\Projects\K.Booking_v2_1\K.Booking\K.Booking.sln">
+</Property><Property Name="Date" Value="05 December 2011">
+</Property><Property Name="Time" Value="20:36:21">
+</Property></Properties><Event ErrorLevel="4" Project="K.Booking" Source="http://go.microsoft.com/fwlink/?LinkId=159919" Description="Warning: this project requires Crystal Reports, which is no longer included with Visual Studio. Please click here for more information.">
+</Event><Event ErrorLevel="0" Project="K.Booking" Source="K.Booking.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="K.Booking" Source="K.Booking.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="K.Booking" Source="K.Booking.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

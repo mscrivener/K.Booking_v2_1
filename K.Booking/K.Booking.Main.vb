@@ -1906,17 +1906,6 @@ Public Class K_Booking_Main
         Me.WindowState = FormWindowState.Maximized
         Me.lblWelcome.Text = "Velkommen " & LoggedInUserFullName
 
-        If System.IO.File.Exists(System.Configuration.ConfigurationManager.AppSettings("CleanFile")) Then
-            Dim finished As Boolean = K.Booking.Data.ResidentStatusUpdate.UpdateResStatus()
-            If finished Then
-                finished = K.Booking.Data.ResidentStatusUpdate.UpdateResType()
-            End If
-            If finished Then
-                ''System.IO.File.AppendAllText(System.Configuration.ConfigurationManager.AppSettings("CleanFile"), "Finished Residents")
-                System.IO.File.Delete(System.Configuration.ConfigurationManager.AppSettings("CleanFile"))
-            End If
-        End If
-
         StartResident()
         'ListRooms()
         'ListUsers()

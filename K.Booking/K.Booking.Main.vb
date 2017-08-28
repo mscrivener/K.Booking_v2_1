@@ -1907,11 +1907,6 @@ Public Class K_Booking_Main
         Me.lblWelcome.Text = "Velkommen " & LoggedInUserFullName
 
         StartResident()
-        'ListRooms()
-        'ListUsers()
-        'ListPriceSets()
-        'SetPriceDescriptions()
-        'StartStats()
 
         'set default date for resident list print
         Me.datResidentList.Value = Now.AddDays(1)

@@ -1,0 +1,10 @@
+D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\bin\Debug\K.Booking.DAL.dll.config
+D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\bin\Debug\K.Booking.DAL.dll
+D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\bin\Debug\K.Booking.DAL.pdb
+D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\bin\Debug\EntityFramework.dll
+D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\bin\Debug\EntityFramework.xml
+D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\obj\Debug\K.Booking.DAL.csproj.CoreCompileInputs.cache
+D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\obj\Debug\K.Booking.DAL.dll
+D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\obj\Debug\K.Booking.DAL.pdb

@@ -14,7 +14,6 @@ F:\My Data\My Documents\Visual Studio 2010\Projects\K.Booking_v2_1\K.Booking.Dat
 F:\My Data\My Documents\Visual Studio 2010\Projects\K.Booking_v2_1\K.Booking.Data\obj\Debug\K.Booking.Data.pdb
 D:\Development Projects\K.Booking_v2_1\K.Booking.Data\bin\Debug\K.Booking.Data.dll
 D:\Development Projects\K.Booking_v2_1\K.Booking.Data\bin\Debug\K.Booking.Data.pdb
-D:\Development Projects\K.Booking_v2_1\K.Booking.Data\obj\Debug\K.Booking.Data.csprojResolveAssemblyReference.cache
 D:\Development Projects\K.Booking_v2_1\K.Booking.Data\obj\Debug\K.Booking.Data.csproj.CoreCompileInputs.cache
 D:\Development Projects\K.Booking_v2_1\K.Booking.Data\obj\Debug\K.Booking.Data.dll
 D:\Development Projects\K.Booking_v2_1\K.Booking.Data\obj\Debug\K.Booking.Data.pdb

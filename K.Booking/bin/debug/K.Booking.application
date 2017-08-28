@@ -4,17 +4,17 @@
   <description asmv2:publisher="Maria Scrivener" asmv2:product="Danks KFUK Booking System" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true" co.v1:createDesktopShortcut="true" />
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
-    <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="K.Booking.exe.manifest" size="5160">
+    <dependentAssembly dependencyType="install" codebase="K.Booking.exe.manifest" size="7281">
       <assemblyIdentity name="K.Booking.exe" version="2.2.0.9" publicKeyToken="0000000000000000" language="da-DK" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>1W/BOumBWDNgO96SYzrq2vIem4A=</dsig:DigestValue>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>AFyK35j/atFgq4Qq++6Ww62+LrD9I5hmtoYX2OYGDFE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

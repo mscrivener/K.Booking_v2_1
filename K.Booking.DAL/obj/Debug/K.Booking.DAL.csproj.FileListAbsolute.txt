@@ -9,3 +9,5 @@ D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\obj\Debug\K.Booking.DAL.csp
 D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\obj\Debug\K.Booking.DAL.dll
 D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\obj\Debug\K.Booking.DAL.pdb
 D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\obj\Debug\K.Booking.DAL.csprojResolveAssemblyReference.cache
+D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\bin\Debug\K.Booking.Data.dll
+D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\bin\Debug\K.Booking.Data.pdb

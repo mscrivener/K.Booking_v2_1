@@ -4,7 +4,7 @@
   <description asmv2:iconFile="K.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="K.Booking" version="1.0.6449.21921" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="K.Booking" version="1.0.6449.31041" language="neutral" processorArchitecture="msil" />
     <commandLine file="K.Booking.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -68,49 +68,49 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="K.Booking.exe" size="195072">
-      <assemblyIdentity name="K.Booking" version="1.0.6449.21921" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="K.Booking" version="1.0.6449.31041" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8cRtpUj15aS7tgNb2omxCrBCL0IlwZg2Q5y3NKkzfxs=</dsig:DigestValue>
+        <dsig:DigestValue>+YVgJZLug+LqAaZZ1RzXFNSY+QRlSmDQb+3X7r9TEeE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="K.Booking.DAL.dll" size="26112">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="K.Booking.DAL.dll" size="30208">
       <assemblyIdentity name="K.Booking.DAL" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>u2s0xFKl5w2N9RAHE3dTX/ba99M6ob9LRTVKDEaZODQ=</dsig:DigestValue>
+        <dsig:DigestValue>c6t47NK0n/UTWMzVE98RR6K5KQtl91t/S7vMOniEkKY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="K.Booking.Data.dll" size="8704">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="K.Booking.Data.dll" size="9216">
       <assemblyIdentity name="K.Booking.Data" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Ti5x4WrYigD3f+edpT+olq1Tsio/IPLZ10LqNF2IQgM=</dsig:DigestValue>
+        <dsig:DigestValue>39MiH3M9OpeSslMmkenz7QP2lIyv//imS4uXdd5b2AI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="K.Booking.Elements.dll" size="69632">
-      <assemblyIdentity name="K.Booking.Elements" version="1.0.6449.21240" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="K.Booking.Elements" version="1.0.6449.30270" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>jlpI7jrSM2YHL3XvxRnzUeY1NUZ7e1i5uAghywQ///w=</dsig:DigestValue>
+        <dsig:DigestValue>S/Rc8FQm7v9u+6hKG7ciFtG9etD9YwcQigi+wmhXNTg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

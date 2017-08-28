@@ -72,5 +72,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\K.Booking.Data\K.Booking.Data.csproj">
+      <Project>{149699be-226f-4e19-acd7-9d711b0b74d3}</Project>
+      <Name>K.Booking.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

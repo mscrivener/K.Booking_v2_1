@@ -6,6 +6,14 @@ K.Booking
 </name>
 </assembly>
 <members>
+<member name="M:K.Booking.K_Booking_Main.ListResidents">
+ <summary>
+ CURRENTLY REFACTORING
+ Populates the resident ListBox with the relevant residents as selected by the dropdown
+ CAVEAT: Search terms are not currently honoured
+ TODO: clean up the bit that populates the ListBox and creation of objects
+ </summary>
+</member>
 <member name="M:K.Booking.K_Booking_Main.btnWelcome_Click(System.Object,System.EventArgs)">
  <summary>
  print welcome note with residenst details

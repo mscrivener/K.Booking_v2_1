@@ -2056,25 +2056,32 @@ Public Class K_Booking_Main
         Me.datPaidUntill.Enabled = bEnabled
     End Sub
 
+    ''' <summary>
+    ''' CURRENTLY REFACTORING
+    ''' Populates the resident ListBox with the relevant residents as selected by the dropdown
+    ''' CAVEAT: Search terms are not currently honoured
+    ''' TODO: clean up the bit that populates the ListBox and creation of objects
+    ''' </summary>
     Private Sub ListResidents()
-        If GetResidentIndex() = 0 Then
-            Dim res As DAL.K_Resident = New DAL.K_Resident()
-            lbxResidents.DataSource = res.ListResidentsAll()
-            lbxResidents.DisplayMember = "K_ResidentDisplayMember"
-            lbxResidents.ValueMember = "K_ResidentID"
-            lbxResidents.SelectedIndex = -1
-        Else
-            Dim r As New Elements.Resident
-
-            Dim t As DataTable = r.List(WriteSQL).Tables(0)
-
-            lbxResidents.DataSource = t.DefaultView
-            lbxResidents.DisplayMember = "K_ResidentDisplayMember"
-            lbxResidents.ValueMember = "K_ResidentID"
-            lbxResidents.SelectedIndex = -1
-
-            r = Nothing
-        End If
+        Dim res As DAL.K_Resident = New DAL.K_Resident()
+        Select Case GetResidentIndex()
+            Case Data.GlobalEnums.ResidentLists.All
+                lbxResidents.DataSource = res.ListResidentsAll()
+            Case Data.GlobalEnums.ResidentLists.Current
+                lbxResidents.DataSource = res.ListResidentsCurrent()
+            Case Data.GlobalEnums.ResidentLists.Arrivals
+                lbxResidents.DataSource = res.ListResidentsArrivals()
+            Case Data.GlobalEnums.ResidentLists.Future
+                lbxResidents.DataSource = res.ListResidentsArrivals()
+            Case Else
+                Dim r As New Elements.Resident
+                Dim t As DataTable = r.List(WriteSQL).Tables(0)
+                lbxResidents.DataSource = t.DefaultView
+                r = Nothing
+        End Select
+        lbxResidents.DisplayMember = "K_ResidentDisplayMember"
+        lbxResidents.ValueMember = "K_ResidentID"
+        lbxResidents.SelectedIndex = -1
     End Sub
 
     Private Sub SetResident(ByVal iResident_ID As Integer)

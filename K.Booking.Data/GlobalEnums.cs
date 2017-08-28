@@ -14,6 +14,21 @@ namespace K.Booking.Data
             Male = 1,
             Female = 2,
         }
+
+        public enum ResidentLists
+        {
+            All = 0,
+            Departures = 1,
+            Arrivals = 2,
+            Appartment = 3,
+            Future = 4,
+            Current = 5,
+            Debtors = 6,
+            Staff = 7,
+            Former = 8,
+            Annulled = 9
+        }
+
         public enum ResidentType
         {
 

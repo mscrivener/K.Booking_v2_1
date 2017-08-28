@@ -17,3 +17,4 @@ D:\Development Projects\K.Booking_v2_1\K.Booking.Data\bin\Debug\K.Booking.Data.p
 D:\Development Projects\K.Booking_v2_1\K.Booking.Data\obj\Debug\K.Booking.Data.csproj.CoreCompileInputs.cache
 D:\Development Projects\K.Booking_v2_1\K.Booking.Data\obj\Debug\K.Booking.Data.dll
 D:\Development Projects\K.Booking_v2_1\K.Booking.Data\obj\Debug\K.Booking.Data.pdb
+D:\Development Projects\K.Booking_v2_1\K.Booking.Data\obj\Debug\K.Booking.Data.csprojResolveAssemblyReference.cache

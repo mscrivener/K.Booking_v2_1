@@ -8,3 +8,4 @@ D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\bin\Debug\EntityFramework.S
 D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\obj\Debug\K.Booking.DAL.csproj.CoreCompileInputs.cache
 D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\obj\Debug\K.Booking.DAL.dll
 D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\obj\Debug\K.Booking.DAL.pdb
+D:\Development Projects\K.Booking_v2_1\K.Booking.DAL\obj\Debug\K.Booking.DAL.csprojResolveAssemblyReference.cache

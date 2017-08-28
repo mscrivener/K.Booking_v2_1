@@ -2057,16 +2057,24 @@ Public Class K_Booking_Main
     End Sub
 
     Private Sub ListResidents()
-        Dim r As New Elements.Resident
+        If GetResidentIndex() = 0 Then
+            Dim res As DAL.K_Resident = New DAL.K_Resident()
+            lbxResidents.DataSource = res.ListResidentsAll()
+            lbxResidents.DisplayMember = "K_ResidentDisplayMember"
+            lbxResidents.ValueMember = "K_ResidentID"
+            lbxResidents.SelectedIndex = -1
+        Else
+            Dim r As New Elements.Resident
 
-        Dim t As DataTable = r.List(WriteSQL).Tables(0)
+            Dim t As DataTable = r.List(WriteSQL).Tables(0)
 
-        lbxResidents.DataSource = t.DefaultView
-        lbxResidents.DisplayMember = "K_ResidentDisplayMember"
-        lbxResidents.ValueMember = "K_ResidentID"
-        lbxResidents.SelectedIndex = -1
+            lbxResidents.DataSource = t.DefaultView
+            lbxResidents.DisplayMember = "K_ResidentDisplayMember"
+            lbxResidents.ValueMember = "K_ResidentID"
+            lbxResidents.SelectedIndex = -1
 
-        r = Nothing
+            r = Nothing
+        End If
     End Sub
 
     Private Sub SetResident(ByVal iResident_ID As Integer)
@@ -2137,30 +2145,35 @@ Public Class K_Booking_Main
         Me.txtFirstName.Focus()
     End Sub
 
-    Private Function WriteSQL() As String
+    Private Function GetResidentIndex() As Integer
         Dim intIndex As Integer = 0
         If CInt(ddlShowResidents.SelectedIndex) > 0 Then
             intIndex = CInt(ddlShowResidents.SelectedIndex)
         End If
+        Return intIndex
+    End Function
+
+    Private Function WriteSQL() As String
+
         Dim SQL As String = "" '+ ' ' + K_ResidentLastName
         SQL = "SELECT R.K_ResidentID, K_ResidentFirstName + ' ' + K_ResidentLastName + ' (' + K_ResidentCPR + ')' AS K_ResidentDisplayMember, K_ResidentArrivalDate, K_ResidentDepartureDate FROM K_Resident R " & _
         ", K_ResidentType RT "
         ' Dim strSelect As String = " AND NOT (SELECT TOP 1 K_ResidentTypeID FROM K_ResidentType WHERE K_ResidentID = K_Resident.K_ResidentID AND K_ResidentTypeFromDate <= #" & Format(Now, Data.Misc.DataBaseDateFormat) & "# ORDER BY K_ResidentTypeFromDate DESC) = 5 "
-        Select Case intIndex
+        Select Case GetResidentIndex()
             Case 4 ' 0 'kommende
                 SQL &= "WHERE K_ResidentArrivalDate > #" & Format(Now, Data.Misc.DataBaseDateFormat) & "# AND K_ResidentStatus = 1"
             Case 5 ' 1 'nuværende
-                SQL &= "WHERE RT.K_ResidentType <> 5 AND RT.K_ResidentType <> 4 " & _
-                "AND K_ResidentArrivalDate <= #" & Format(Now, Data.Misc.DataBaseDateFormat) & "# AND K_ResidentDepartureDate > #" & Format(Now, Data.Misc.DataBaseDateFormat) & "# " & _
+                SQL &= "WHERE RT.K_ResidentType <> 5 AND RT.K_ResidentType <> 4 " &
+                "AND K_ResidentArrivalDate <= #" & Format(Now, Data.Misc.DataBaseDateFormat) & "# AND K_ResidentDepartureDate > #" & Format(Now, Data.Misc.DataBaseDateFormat) & "# " &
                 " AND K_ResidentStatus = 1"
             Case 1 ' 2 'afrejser
                 SQL &= "WHERE K_ResidentDepartureDate = #" & Format(Now, Data.Misc.DataBaseDateFormat) & "# AND K_ResidentStatus = 1"
             Case 2 ' 3 'ankomster
                 SQL &= "WHERE K_ResidentArrivalDate = #" & Format(Now, Data.Misc.DataBaseDateFormat) & "# AND K_ResidentStatus = 1"
             Case 6 ' 4 'skyldnere
-                SQL &= "WHERE (K_ResidentPaidUntil < #" & Format(Now.AddDays(-3), Data.Misc.DataBaseDateFormat) & "# " & _
-                    "AND (DateDiff(d, [K_ResidentPaidUntil], [K_ResidentDepartureDate]) > 1) " & _
-                    "OR (RT.K_ResidentType = 3 AND R.[K_ResidentCreatedDate] > #" & Format(New DateTime(2008, 12, 10), Data.Misc.DataBaseDateFormat) & "# AND (DateDiff(d, R.[K_ResidentCreatedDate], GETUTCDATE()) >= 3) AND R.K_ResidentID NOT IN (SELECT K_ResidentID FROM K_Invoice, K_InvoiceLine WHERE K_InvoiceLine.K_InvoiceID = K_Invoice.K_InvoiceID AND K_InvoiceLine.K_InvoicePriceID = 4))) " & _
+                SQL &= "WHERE (K_ResidentPaidUntil < #" & Format(Now.AddDays(-3), Data.Misc.DataBaseDateFormat) & "# " &
+                    "AND (DateDiff(d, [K_ResidentPaidUntil], [K_ResidentDepartureDate]) > 1) " &
+                    "OR (RT.K_ResidentType = 3 AND R.[K_ResidentCreatedDate] > #" & Format(New DateTime(2008, 12, 10), Data.Misc.DataBaseDateFormat) & "# AND (DateDiff(d, R.[K_ResidentCreatedDate], GETUTCDATE()) >= 3) AND R.K_ResidentID NOT IN (SELECT K_ResidentID FROM K_Invoice, K_InvoiceLine WHERE K_InvoiceLine.K_InvoiceID = K_Invoice.K_InvoiceID AND K_InvoiceLine.K_InvoicePriceID = 4))) " &
                     "AND K_ResidentStatus = 1 "
 
                 'SQL &= "WHERE (K_ResidentPaidUntil < #" & Format(Now.AddDays(-3), Data.Misc.DataBaseDateFormat) & "# " & _

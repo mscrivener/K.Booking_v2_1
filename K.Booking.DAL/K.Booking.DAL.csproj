@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="K_Resident_impl.cs" />
     <Compile Include="Testing.cs" />
     <Compile Include="KModel.cs" />
     <Compile Include="K_Bed.cs" />

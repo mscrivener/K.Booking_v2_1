@@ -19,12 +19,13 @@ namespace K.Booking.DAL
         /// Ordered by FirstName
         /// </summary>
         /// <returns></returns>
-        public IEnumerable<K_Resident> ListResidentsAll()
+        public IEnumerable<K_Resident> ListResidentsAll(string searchTerm)
         {
             using (KModel km = new KModel())
             {
                 var query = from res in km.K_Resident
                             where res.K_ResidentStatus == 1
+                            && (res.K_ResidentFirstName == "%Bjarne%")
                             orderby res.K_ResidentFirstName
                             select res;
 

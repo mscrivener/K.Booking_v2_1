@@ -2066,13 +2066,13 @@ Public Class K_Booking_Main
         Dim res As DAL.K_Resident = New DAL.K_Resident()
         Select Case GetResidentIndex()
             Case Data.GlobalEnums.ResidentLists.All
-                lbxResidents.DataSource = res.ListResidentsAll()
+                lbxResidents.DataSource = res.ListResidentsAll(Me.txtSerachResident.Text)
             Case Data.GlobalEnums.ResidentLists.Current
                 lbxResidents.DataSource = res.ListResidentsCurrent()
             Case Data.GlobalEnums.ResidentLists.Arrivals
                 lbxResidents.DataSource = res.ListResidentsArrivals()
             Case Data.GlobalEnums.ResidentLists.Future
-                lbxResidents.DataSource = res.ListResidentsArrivals()
+                lbxResidents.DataSource = res.ListResidentsFuture()
             Case Else
                 Dim r As New Elements.Resident
                 Dim t As DataTable = r.List(WriteSQL).Tables(0)

@@ -2060,19 +2060,28 @@ Public Class K_Booking_Main
     ''' CURRENTLY REFACTORING
     ''' Populates the resident ListBox with the relevant residents as selected by the dropdown
     ''' CAVEAT: Search terms are not currently honoured
-    ''' TODO: clean up the bit that populates the ListBox and creation of objects
     ''' </summary>
     Private Sub ListResidents()
         Dim res As DAL.K_Resident = New DAL.K_Resident()
         Select Case GetResidentIndex()
             Case Data.GlobalEnums.ResidentLists.All
-                lbxResidents.DataSource = res.ListResidentsAll(Me.txtSerachResident.Text)
+                lbxResidents.DataSource = res.ListResidentsAll()
             Case Data.GlobalEnums.ResidentLists.Current
                 lbxResidents.DataSource = res.ListResidentsCurrent()
             Case Data.GlobalEnums.ResidentLists.Arrivals
                 lbxResidents.DataSource = res.ListResidentsArrivals()
             Case Data.GlobalEnums.ResidentLists.Future
                 lbxResidents.DataSource = res.ListResidentsFuture()
+            Case Data.GlobalEnums.ResidentLists.Departures
+                lbxResidents.DataSource = res.ListResidentsDeparture()
+            Case Data.GlobalEnums.ResidentLists.Staff
+                lbxResidents.DataSource = res.ListResidentsStaff()
+            Case Data.GlobalEnums.ResidentLists.Appartment
+                lbxResidents.DataSource = res.ListResidentsAppartment()
+            Case Data.GlobalEnums.ResidentLists.Former
+                lbxResidents.DataSource = res.ListResidentsFormer()
+            Case Data.GlobalEnums.ResidentLists.Annulled
+                lbxResidents.DataSource = res.ListResidentsAnnulled()
             Case Else
                 Dim r As New Elements.Resident
                 Dim t As DataTable = r.List(WriteSQL).Tables(0)

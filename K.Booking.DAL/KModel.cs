@@ -8,10 +8,11 @@ namespace K.Booking.DAL
     public partial class KModel : DbContext
     {
         public KModel()
-            : base("name=KModel1")
+            : base("name=KModel")
         {
         }
 
+        public virtual DbSet<Guest> Guests { get; set; }
         public virtual DbSet<K_Bed> K_Bed { get; set; }
         public virtual DbSet<K_Holiday> K_Holiday { get; set; }
         public virtual DbSet<K_Invoice> K_Invoice { get; set; }
@@ -27,6 +28,7 @@ namespace K.Booking.DAL
         public virtual DbSet<K_StatsInvoices> K_StatsInvoices { get; set; }
         public virtual DbSet<K_User> K_User { get; set; }
         public virtual DbSet<Person> People { get; set; }
+        public virtual DbSet<Stay> Stays { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -8,7 +8,7 @@ namespace K.Booking.DAL
     public partial class KModel : DbContext
     {
         public KModel()
-            : base("name=KModel")
+            : base("name=KModel1")
         {
         }
 
@@ -26,6 +26,7 @@ namespace K.Booking.DAL
         public virtual DbSet<K_Stats> K_Stats { get; set; }
         public virtual DbSet<K_StatsInvoices> K_StatsInvoices { get; set; }
         public virtual DbSet<K_User> K_User { get; set; }
+        public virtual DbSet<Person> People { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -84,6 +85,35 @@ namespace K.Booking.DAL
 
             modelBuilder.Entity<K_User>()
                 .Property(e => e.K_UserLoginName)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Person>()
+                .Property(e => e.FirstName)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Person>()
+                .Property(e => e.LastName)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Person>()
+                .Property(e => e.DoB)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Person>()
+                .Property(e => e.DKPostalCode)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Person>()
+                .Property(e => e.Phone)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Person>()
+                .Property(e => e.Phone2)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Person>()
+                .Property(e => e.DKContactPhone)
                 .IsUnicode(false);
         }
     }

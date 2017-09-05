@@ -2172,7 +2172,7 @@ Public Class K_Booking_Main
     Private Function WriteSQL() As String
 
         Dim SQL As String = "" '+ ' ' + K_ResidentLastName
-        SQL = "SELECT R.K_ResidentID, K_ResidentFirstName + ' ' + K_ResidentLastName + ' (' + K_ResidentCPR + ')' AS K_ResidentDisplayMember, K_ResidentArrivalDate, K_ResidentDepartureDate FROM K_Resident R " & _
+        SQL = "SELECT R.K_ResidentID, K_ResidentFirstName + ' ' + K_ResidentLastName + ' (' + K_ResidentCPR + ')' AS K_ResidentDisplayMember, K_ResidentArrivalDate, K_ResidentDepartureDate FROM K_Resident R " &
         ", K_ResidentType RT "
         ' Dim strSelect As String = " AND NOT (SELECT TOP 1 K_ResidentTypeID FROM K_ResidentType WHERE K_ResidentID = K_Resident.K_ResidentID AND K_ResidentTypeFromDate <= #" & Format(Now, Data.Misc.DataBaseDateFormat) & "# ORDER BY K_ResidentTypeFromDate DESC) = 5 "
         Select Case GetResidentIndex()
@@ -2212,15 +2212,15 @@ Public Class K_Booking_Main
         If Not Me.txtSerachResident.Text = String.Empty Then
             Dim strSearchString As String
             strSearchString = Me.txtSerachResident.Text
-            SQL &= " AND(" & _
-                    "K_ResidentFirstName LIKE '%" & strSearchString & "%' " & _
-                    "OR K_ResidentLastName LIKE '%" & strSearchString & "%' " & _
+            SQL &= " AND(" &
+                    "K_ResidentFirstName LIKE '%" & strSearchString & "%' " &
+                    "OR K_ResidentLastName LIKE '%" & strSearchString & "%' " &
                     "OR K_ResidentCPR LIKE '%" & strSearchString & "%')"
         End If
 
         'mStrSQL &= strSelect
 
-        SQL &= "AND RT.K_ResidentID = R.K_ResidentID AND RT.K_ResidentTypeActive = 1 " & _
+        SQL &= "AND RT.K_ResidentID = R.K_ResidentID AND RT.K_ResidentTypeActive = 1 " &
         " ORDER BY K_ResidentFirstName"
 
         Return SQL

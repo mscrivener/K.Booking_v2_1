@@ -49,9 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="K_Resident_impl.cs" />
-    <Compile Include="Testing.cs" />
     <Compile Include="KModel.cs" />
+    <Compile Include="K_Resident_impl.cs" />
     <Compile Include="K_Bed.cs" />
     <Compile Include="K_Holiday.cs" />
     <Compile Include="K_Invoice.cs" />
@@ -66,6 +65,7 @@
     <Compile Include="K_Stats.cs" />
     <Compile Include="K_StatsInvoices.cs" />
     <Compile Include="K_User.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
